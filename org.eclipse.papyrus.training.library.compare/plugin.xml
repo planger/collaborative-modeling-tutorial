@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.compare.rcp.ui.filters">
+      <filter
+            activeByDefault="true"
+            class="org.eclipse.papyrus.training.library.compare.filters.InvisibleShapesAndConnectorsFilter"
+            description="Filters changes of invisible shapes and connectors"
+            label="Invsisible Shapes and Connectors">
+      </filter>
+   </extension>
+   <extension
+         point="org.eclipse.emf.compare.edit.adapterFactory">
+      <factory
+            class="org.eclipse.papyrus.training.library.compare.AdapterFactory"
+            label="Custom Library Provider"
+            optional="true"
+            ranking="1000"
+            supportedTypes="org.eclipse.emf.edit.provider.IEditingDomainItemProvider
+               org.eclipse.emf.edit.provider.IStructuredItemContentProvider
+               org.eclipse.emf.edit.provider.ITreeItemContentProvider
+               org.eclipse.emf.edit.provider.IItemLabelProvider
+               org.eclipse.emf.edit.provider.IItemPropertySource
+               org.eclipse.emf.compare.provider.IItemStyledLabelProvider
+               org.eclipse.emf.compare.provider.IItemDescriptionProvider"
+            uri="http://www.eclipse.org/uml2/5.0.0/UML">
+      </factory>
+   </extension>
+
+</plugin>
