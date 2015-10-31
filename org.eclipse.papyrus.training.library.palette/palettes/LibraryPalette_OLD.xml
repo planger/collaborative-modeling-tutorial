@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<paletteDefinition>
+	<content>
+		<drawer
+			iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Image.gif"
+			id="Drawer__1413899300182" name="Items">
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413899417802" name="Book (Class)" refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::Book" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413900136616" name="BookOnTape (Class)"
+				refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::BookOnTape" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<separator id="Separator_1413965098921" />
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413965109170" name="Periodical (Class)"
+				refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::Periodical" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413965114275" name="VideoCassete (Class)"
+				refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::VideoCassete" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+		</drawer>
+		<drawer
+			iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Actor.gif"
+			id="drawer_1413900434218" name="Persons">
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413900460253" name="Borrower (Class)"
+				refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::Borrower" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413900473995" name="Employee (Class)"
+				refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::Employee" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Class.gif"
+				id="clazz.tool.class_1413900482112" name="Writer (Class)" refToolId="clazz.tool.class">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::Writer" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+		</drawer>
+		<drawer
+			iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Node.gif"
+			id="drawer_1413900551307" name="Library">
+			<aspectTool description="Create an element with a stereotype"
+				iconpath="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Package.gif"
+				id="clazz.tool.package_1413900602511" name="Library (Package)"
+				refToolId="clazz.tool.package">
+				<postAction id="org.eclipse.papyrus.applystereotypeactionprovider">
+					<stereotypesToApply>
+						<stereotype stereotypeName="extlibrary::Library" />
+					</stereotypesToApply>
+				</postAction>
+			</aspectTool>
+		</drawer>
+	</content>
+</paletteDefinition>
