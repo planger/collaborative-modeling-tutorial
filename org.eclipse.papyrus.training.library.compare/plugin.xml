@@ -7,7 +7,7 @@
             activeByDefault="true"
             class="org.eclipse.papyrus.training.library.compare.filters.InvisibleShapesAndConnectorsFilter"
             description="Filters changes of invisible shapes and connectors"
-            label="Invsisible Shapes and Connectors">
+            label="Invisible Shapes and Connectors">
       </filter>
    </extension>
    <extension
@@ -26,6 +26,15 @@
                org.eclipse.emf.compare.provider.IItemDescriptionProvider"
             uri="http://www.eclipse.org/uml2/5.0.0/UML">
       </factory>
+   </extension>
+   <extension
+         point="org.eclipse.emf.compare.rcp.ui.groups">
+      <group
+            class="org.eclipse.papyrus.training.library.compare.groups.BookChangesByCategory"
+            description="Groups the changes of books by category"
+            label="By Book Category"
+            type="BOTH">
+      </group>
    </extension>
 
 </plugin>
