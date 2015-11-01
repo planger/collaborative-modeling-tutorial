@@ -27,6 +27,7 @@ import org.eclipse.uml2.uml.Stereotype;
 
 import com.google.common.base.Predicate;
 import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableList.Builder;
 import com.google.common.collect.Lists;
 
 @SuppressWarnings("restriction")
@@ -37,12 +38,11 @@ public class BookChangesByCategory extends AbstractDifferenceGroupProvider {
 
 	@Override
 	protected Collection<? extends IDifferenceGroup> buildGroups(Comparison comparison) {
-		final IDifferenceGroup mystery = createCategoryGroup("Mystery");
-		final IDifferenceGroup sienceFiction = createCategoryGroup("ScienceFiction");
-		final IDifferenceGroup biography = createCategoryGroup("Biography");
-
-		final ImmutableList<IDifferenceGroup> groups = ImmutableList.of(mystery, sienceFiction, biography);
-		return asListOfNonEmptyGroups(buildSubtrees(groups));
+		final Builder<IDifferenceGroup> listBuilder = ImmutableList.builder();
+		for (BookCategory category : BookCategory.values()) {
+			listBuilder.add(createCategoryGroup(category.getName()));
+		}
+		return asListOfNonEmptyGroups(buildSubtrees(listBuilder.build()));
 	}
 
 	private BasicDifferenceGroupImpl createCategoryGroup(String category) {
